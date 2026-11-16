@@ -1,0 +1,93 @@
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.form-container{
+    background-color: pink;
+    width: 100%;
+    max-width: 30rem;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    border-radius: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p button:hover{
+    background-color:rgb(207, 138, 207);
+    color:white;
+}
+
+input:required,
+textarea:required{
+    border: 0.2rem solid rgb(245, 159, 159);
+}
+
+input:user-invalid,
+textarea:user-invalid{
+    border: 0.1rem solid red;
+    background-color: rgb(249, 185, 185);
+}
+
+
+
+.field-error {
+    display: block;
+    color: #a00030;
+    font-size: 0.85rem;
+    margin-top: 0.4rem;
+}
+
+#error-message {
+    color: #a00030;
+    font-weight: bold;
+}
+
+#info-message {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+#info-message.warning {
+    color: #8a4b00;
+    font-weight: bold;
+}
+
+#info-message.limit-reached {
+    color: #a00030;
+    font-weight: bold;
+}
+
+input:user-invalid,
+textarea:user-invalid {
+    border: 2px solid #a00030;
+}
+
+input:user-valid,
+textarea:user-valid {
+    border: 2px solid green;
+}
+
+input:focus-visible,
+textarea:focus-visible,
+button:focus-visible {
+    outline: 3px solid purple;
+    outline-offset: 3px;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+
